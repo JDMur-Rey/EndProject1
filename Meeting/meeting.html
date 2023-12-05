@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client Maker</title>
+    <link rel="stylesheet" href="meeting-creation.component.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Create A Meeting</h2>
+      <h4>Enter information to schedule a meeting!</h4>
+      <div class="form-container">
+        <form>
+          <div class="identification">
+            <div class="id-container">
+              <label for="Client_id">Client ID</label>
+              <br />
+              <input
+                type="text"
+                id="client_id"
+                placeholder="ID Number"
+                name="client_id"
+              />
+            </div>
+            <div class="name-container">
+              <label for="fname">First Name</label>
+              <br />
+              <input
+                type="text"
+                id="fname"
+                placeholder="Enter First Name"
+                name="first_name"
+              />
+            </div>
+          </div>
+          <label for="email">Email</label>
+          <br />
+          <input
+            type="text"
+            id="email"
+            placeholder="Enter Email"
+            name="email"
+          />
+          <br />
+          <label for="topic">Meeting Topic</label>
+          <br />
+          <input
+            type="text"
+            id="topic"
+            placeholder="ex. New Project"
+            name="meeting_topic"
+          />
+          <div class="date-time">
+            <div class="date-container">
+              <label for="date">Date</label>
+              <br />
+              <input type="date" id="date" name="date" />
+            </div>
+            <div class="time-container">
+              <label for="time">Time</label>
+              <br />
+              <input type="time" id="time" name="time" />
+            </div>
+          </div>
+          <br />
+          <label for="where">Location</label>
+          <br />
+          <input
+            type="text"
+            id="where"
+            placeholder="ex. My office, Zoom..."
+            name="location"
+          />
+          <br />
+          <input type="submit" id="submit" value="Create" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

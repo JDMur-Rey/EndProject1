@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  margin: 0px;
+  font-weight: 900;
+}
+
+h4 {
+  margin: 12px 0px;
+}
+
+.container {
+  margin: auto;
+  width: 455px;
+}
+
+.form-container {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  border-top: solid;
+  border-bottom: solid;
+}
+
+.identification {
+  display: flex;
+  justify-content: space-between;
+  width: 450px;
+}
+
+.date-time {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+}
+
+input {
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+}
+
+input:focus {
+  margin-bottom: 15px;
+  padding: 10px 15px;
+}
+
+label {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+#date,
+#time {
+  margin-bottom: 0px;
+}
+
+#submit {
+  margin-top: 8px;
+  padding: 5px 30px;
+  background-color: rgb(248, 248, 248);
+  cursor: pointer;
+}
