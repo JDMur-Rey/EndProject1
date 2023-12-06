@@ -5,13 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Client Maker</title>
     <link rel="stylesheet" href="meeting-creation.component.css" />
+    <script>
+      function validateMeetingInfo() {
+        let first_name = document.forms[0]["fname"].value;
+        let email = document.forms[0]["email"].value;
+        let meeting_topic = document.forms[0]["topic"].value;
+        let date = document.forms[0]["date"].value;
+        let time = document.forms[0]["time"].value;
+        let location = document.forms[0]["where"].value;
+
+        if (first_name == "") console.log("enter first name");
+        else if (email == "") console.log("enter email");
+        else if (meeting_topic == "") console.log("enter topic");
+        else if (date == "") console.log("enter date");
+        else if (time == "") console.log("enter time");
+        else if (location == "") console.log("enter location");
+      }
+    </script>
   </head>
   <body>
     <div class="container">
       <h2>Create A Meeting</h2>
       <h4>Enter information to schedule a meeting!</h4>
       <div class="form-container">
-        <form>
+        <form onSubmit="validateMeetingInfo()">
           <div class="identification">
             <div class="id-container">
               <label for="Client_id">Client ID</label>
