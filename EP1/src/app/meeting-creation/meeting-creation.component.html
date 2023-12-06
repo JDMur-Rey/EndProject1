@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="meeting-creation.component.css" />
     <script>
       function validateMeetingInfo() {
+        let client_id = document.forms[0][client_id].value;
         let first_name = document.forms[0]["fname"].value;
         let email = document.forms[0]["email"].value;
         let meeting_topic = document.forms[0]["topic"].value;
@@ -14,7 +15,8 @@
         let time = document.forms[0]["time"].value;
         let location = document.forms[0]["where"].value;
 
-        if (first_name == "") console.log("enter first name");
+        if (client_id == "") console.log("enter ID number");
+        else if (first_name == "") console.log("enter first name");
         else if (email == "") console.log("enter email");
         else if (meeting_topic == "") console.log("enter topic");
         else if (date == "") console.log("enter date");
